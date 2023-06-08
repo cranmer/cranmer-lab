@@ -3,7 +3,7 @@ layout: sidebar-content
 permalink: /left-bar-example.html
 title: left bar example
 description: Example page
-nav: true
+nav: false
 nav_order: 5
 
 profile:
