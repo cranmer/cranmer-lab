@@ -1,12 +1,16 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - cranmer
+  - matthewfeickert
+  - alexander-held
+  - irinaespejo
+  - mdkdrnevich
+  - GarrettMerz
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - cranmer/active_sciencing
+  - madminer-tool/madminer-tutorial
+  - cranmer/poisson-convolution-sum
+  - cranmer/neural_unfolding 
+  - cranmer/backdrop
+  - cranmer/expected-contours
+  - diana-hep/carl
