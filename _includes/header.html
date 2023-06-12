@@ -43,11 +43,8 @@
       <div class="uw-main-nav">
         <nav class="uw-nav-menu uw-nav-menu-reverse" aria-label="Main Menu">
           <ul id="uw-main-nav">
-            <li>
-              <a href="">Home</a>
-            </li>
 
-            <!-- About -->
+            <!-- About / Home -->
               <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
                 <a class="nav-link" href="{{ '/' | relative_url }}">Home
                   {%- if page.permalink == '/' -%}
@@ -72,18 +69,19 @@
                 {%- for p in sorted_pages -%}
                 {%- if p.nav and p.autogen == nil -%}
                 {%- if p.dropdown %}
-                <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}" >
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ p.title }}
-                    {%- if page.title == p.title -%}
-                    <span class="sr-only">(current)</span>
-                    {%- endif -%}
+                <li id="menu-templates" class="uw-dropdown current-menu-parent" >
+                  <a href="fallback_url_for_no_js" role="button" aria-haspopup="true" aria-expanded="false" >
+                    {{ p.title }}
+                    <svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-down"></use></svg><svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-up"></use></svg>
                   </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <ul aria-hidden="true" aria-label="Templates submenu" class="uw-child-menu">
                     {%- for child in p.children -%}
                     {%- if child.title == 'divider' %}
                     <div class="dropdown-divider"></div>
                     {%- else %}
-                    <a class="dropdown-item" href="{{ child.permalink | relative_url }}">{{ child.title }}</a>
+                    <li>
+                     <a href="{{ child.permalink | relative_url }}">{{ child.title }}</a>
+                    </li>
                     {%- endif -%}
                     {% endfor %}
                   </div>
@@ -99,8 +97,7 @@
                 {%- endif -%}
                 {%- endif -%}
                 {% endfor -%}
-                {%- if site.enable_darkmode %}              
-
+              <!---
             <li id="menu-templates" class="uw-dropdown current-menu-parent">
               <a href="fallback_url_for_no_js" role="button" aria-haspopup="true" aria-expanded="false">
                 Templates<svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-down"></use></svg><svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-up"></use></svg>
@@ -120,37 +117,7 @@
                 </li>
               </ul>
             </li>
-        </nav>
+          -->
       </div>
-      <div class="uw-secondary-nav">
-        <nav class="uw-nav-menu uw-nav-menu-secondary" aria-label="Secondary Menu">
-          <ul>
-            <li id="menu-news" class="uw-dropdown">
-              <a href="http://news.wisc.edu" aria-haspopup="true" aria-expanded="false">
-                News<svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-down"></use></svg><svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-up"></use></svg>
-              </a>
-              <ul aria-hidden="true" aria-label="News submenu" class="uw-child-menu">
-                <li>
-                  <a href="http://localhost:8001/about/">About</a>
-                </li>
-                <li>
-                  <a href="http://localhost:8001/contact-us/our-location/">Our Location</a>
-                </li>
-                <li>
-                  <a href="http://localhost:8001/news/">News</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="http://today.wisc.edu">Calendar</a>
-            </li>
-            <li>
-              <a href="http://map.wisc.edu">Map</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    {%- endif -%}
-
+  </nav>
 
