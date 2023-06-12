@@ -215,11 +215,8 @@
       <div class="uw-main-nav">
         <nav class="uw-nav-menu uw-nav-menu-reverse" aria-label="Main Menu">
           <ul id="uw-main-nav">
-            <li>
-              <a href="">Home</a>
-            </li>
 
-            <!-- About -->
+            <!-- About / Home -->
               <li class="nav-item ">
                 <a class="nav-link" href="/cranmer-lab/">Home</a>
               </li>
@@ -246,15 +243,24 @@
                 <li class="nav-item ">
                   <a class="nav-link" href="/cranmer-lab/teaching.html">teaching</a>
                 </li>
-                <li class="nav-item dropdown ">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus</a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/cranmer-lab/publications/">publications</a>
+                <li id="menu-templates" class="uw-dropdown current-menu-parent">
+                  <a href="fallback_url_for_no_js" role="button" aria-haspopup="true" aria-expanded="false">
+                    submenus
+                    <svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-down"></use></svg><svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-up"></use></svg>
+                  </a>
+                  <ul aria-hidden="true" aria-label="Templates submenu" class="uw-child-menu">
+                    <li>
+                     <a href="/cranmer-lab/publications/">publications</a>
+                    </li>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/cranmer-lab/projects/">projects</a>
-                  </div>
-                </li>              
-
+                    <li>
+                     <a href="/cranmer-lab/projects/">projects</a>
+                    </li>
+                  </ul>
+</li>
+</ul></nav>
+</div>
+                <!---
             <li id="menu-templates" class="uw-dropdown current-menu-parent">
               <a href="fallback_url_for_no_js" role="button" aria-haspopup="true" aria-expanded="false">
                 Templates<svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-down"></use></svg><svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-up"></use></svg>
@@ -274,37 +280,11 @@
                 </li>
               </ul>
             </li>
-        </ul></nav>
+          -->
       </div>
-      <div class="uw-secondary-nav">
-        <nav class="uw-nav-menu uw-nav-menu-secondary" aria-label="Secondary Menu">
-          <ul>
-            <li id="menu-news" class="uw-dropdown">
-              <a href="http://news.wisc.edu" aria-haspopup="true" aria-expanded="false" rel="external nofollow noopener" target="_blank">
-                News<svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-down"></use></svg><svg aria-hidden="true" class="uw-caret" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-caret-up"></use></svg>
-              </a>
-              <ul aria-hidden="true" aria-label="News submenu" class="uw-child-menu">
-                <li>
-                  <a href="http://localhost:8001/about/" rel="external nofollow noopener" target="_blank">About</a>
-                </li>
-                <li>
-                  <a href="http://localhost:8001/contact-us/our-location/" rel="external nofollow noopener" target="_blank">Our Location</a>
-                </li>
-                <li>
-                  <a href="http://localhost:8001/news/" rel="external nofollow noopener" target="_blank">News</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="http://today.wisc.edu" rel="external nofollow noopener" target="_blank">Calendar</a>
-            </li>
-            <li>
-              <a href="http://map.wisc.edu" rel="external nofollow noopener" target="_blank">Map</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+  
+
+
 
     <!-- Content -->
     <div class="post distill">
