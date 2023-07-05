@@ -13,11 +13,16 @@ h5,
 h6,
 em,
 div,
-li,
-span,
+// li,
+// span, / Thanks Abe
 strong {
   color: var(--global-text-color);
 }
+
+//li.uw-footer {
+//  color: #adadad;
+//}
+
 
 hr {
   border-top: 1px solid var(--global-divider-color);
