@@ -1275,6 +1275,8 @@ h1.uw-mini-bar:before {
   font-family: var(--uwDisplayFont);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 }
 .uw-global-bar.uw-global-bar-inverse {
   background-color: white;
@@ -1294,6 +1296,7 @@ h1.uw-mini-bar:before {
 }
 .uw-global-name-link:hover, .uw-global-name-link:visited, .uw-global-name-link:active {
   text-decoration: none;
+  color:  white;
 }
 .uw-global-name-link span {
   display: none;
@@ -2086,6 +2089,7 @@ li.uw-search-list-item .uw-search-input[type=text] {
 }
 
 .uw-contact-item {
+  color: #adadad;
   list-style: none;
   margin-bottom: 0.75rem;
   line-height: 1.25;
@@ -2110,6 +2114,7 @@ li.uw-search-list-item .uw-search-input[type=text] {
   text-align: center;
 }
 .uw-copyright p {
+  color: #adadad;
   margin-bottom: 0.2rem;
   font-size: 0.925rem;
 }
