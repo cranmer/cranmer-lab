@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Cranmer Lab # the website title (if blank, full name will be used instead)
-first_name: Kyle
-middle_name: S.
-last_name: Cranmer
+title: Bucky's Lab # the website title (if blank, full name will be used instead)
+first_name: Bucky
+middle_name: 
+last_name: Badger
 email: you@example.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A UW-themed jekyll template for academics with the features of [*folio](https://github.com/bogoli/-folio).
@@ -19,7 +19,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://cranmer.github.io # the base hostname & protocol for your site
-baseurl: /cranmer-lab # the subpath of your site, e.g. /blog/
+baseurl: /uw-jekyll-theme/ # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 

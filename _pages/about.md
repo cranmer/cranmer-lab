@@ -3,12 +3,12 @@ layout: about
 title: about
 permalink: /
 subtitle: 
-  Data Science Institute | Physics | Computer Science | Statistics <br />
+  Your Department <br />
   University of Wisconsin--Madison
 
 profile:
   align: right
-  image: Kyle-Cranmer-headshot-cropped-square-web.jpeg
+  image: BuckyBadger.svg.png
   image_circular: false # crops the image to make it circular
   address: >
     <p>555 your office number</p>
@@ -21,7 +21,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-**This is a work in progress. I'm trying to merge the al-folio jekyll theme with UW-Madison's HTML templates.**
+**This is a work in progress. We are creating a UW-Madison's theme for a jekyll-based static website based on the al-folio project..**
 
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
