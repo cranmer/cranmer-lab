@@ -1,0 +1,21 @@
+left-column:
+  title: Partners
+  entries:
+    - text: Division of Student Life
+      url: https://students.wisc.edu/
+    - text: Office of the Chancellor
+      url: https://chancellor.wisc.edu/
+
+center-column: 
+  title: Quick links
+  entries:
+    - text: Accessibility
+      url: http://www.wisc.edu/accessibility/
+    - text: Diversity
+      url: https://diversity.wisc.edu/
+  
+contact-info: 
+  email: "research@datascience.wisc.edu"
+  phone: 123
+  twitter: datascience_uw
+

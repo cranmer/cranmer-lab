@@ -9,38 +9,34 @@
             <svg aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-crest-footer"></use></svg>
           </a>
         </div>
-        <div class="uw-footer-menu">
-          <h3 class="uw-footer-header">Partners</h3>
+        <div class="uw-footer-menu">          
+          <h3 class="uw-footer-header">{{ site.data.footer.left-column.title }}</h3>
           <ul>
-            <li><a href="https://students.wisc.edu/">Division of Student Life</a></li>
-            <li><a href="http://provost.wisc.edu/climate.htm">Division of Diversity, Equity &amp; Educational Achievement</a></li>
-            <li><a href="https://chancellor.wisc.edu/">Office of the Chancellor</a></li>
-            <li><a href="https://universityrelations.wisc.edu/">University Relations</a></li>
-            <li><a href="https://msc.wisc.edu/">Multicultural Student Center</a></li>
-            <li><a href="http://www.oed.wisc.edu/">Office for Equity and Diversity</a></li>
+          {% for entry in site.data.footer.left-column.entries %}
+            <li><a href="{{entry.url}}">{{entry.text}}</a></li>
+          {% endfor %}
           </ul>
         </div>
-        <div class="uw-footer-menu">
-          <h3 class="uw-footer-header">Quick Links</h3>
+
+        <div class="uw-footer-menu">          
+          <h3 class="uw-footer-header">{{ site.data.footer.center-column.title }}</h3>
           <ul>
-            <li><a href="http://www.wisc.edu/accessibility/">Accessibility</a></li>
-            <li><a href="https://diversity.wisc.edu/">Diversity</a></li>
-            <li><a href="http://www.wisc.edu/governance/">Governance</a></li>
-            <li><a href="http://www.wisc.edu/policies/">Policies</a></li>
-            <li><a href="http://uwpd.wisc.edu/">Safety</a></li>
-            <li><a href="http://www.oed.wisc.edu/title-ix.htm">Title IX</a></li>
+          {% for entry in site.data.footer.center-column.entries %}
+            <li><a href="{{entry.url}}">{{entry.text}}</a></li>
+          {% endfor %}
           </ul>
         </div>
-            
+
+
         <div class="uw-footer-contact">
           <h3 class="uw-footer-header">Contact Us</h3>
           <ul class="uw-contact-list">
-            <li class="uw-contact-item">Email: <a href="mailto:email@wisc.edu">email@wisc.edu</a></li>
-            <li class="uw-contact-item">Phone: <a href="tel:608-555-5555">608-555-5555</a></li>
+            <li class="uw-contact-item">Email: <a href="mailto:{ {site.data.footer.contact-info.email }}">{{ site.data.footer.contact-info.email }}</a></li>
+            <li class="uw-contact-item">Phone: <a href="tel:{{ site.data.footer.contact-info.phone }}">{{ site.data.footer.contact-info.phone }}</a></li>
             <li>
               <ul class="uw-social-icons">
                 <li id="uw-icon-twitter" class="uw-social-icon">
-                  <a aria-label="twitter" href="https://twitter.com"><svg aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-twitter"></use></svg></a>
+                  <a aria-label="twitter" href="https://twitter.com/{{ site.data.footer.contact-info.twitter }}"><svg aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-twitter"></use></svg></a>
                 </li>
                 <li id="uw-icon-instagram" class="uw-social-icon">
                   <a aria-label="instagram" href="https://www.instagram.com"><svg aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#uw-symbol-instagram"></use></svg></a>
@@ -55,7 +51,7 @@
       </div>
 
       <div class="uw-copyright">
-        <p class="uw-contact-item">Feedback, questions or accessibility issues: <a href="mailto:changethis@domain">changethis@domain</a></p>
+        <p class="uw-contact-item">Feedback, questions or accessibility issues: <a href="mailto:{{site.data.contact-info.email}}">{{site.data.contact-info.email}}</a></p>
         <p>© 2017 Board of Regents of the <a href="http://www.wisconsin.edu">University of Wisconsin System</a></p>
       </div>
     </footer>
