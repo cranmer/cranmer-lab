@@ -1,16 +1,15 @@
 github_users:
-  - cranmer
   - matthewfeickert
-  - alexander-held
-  - irinaespejo
-  - mdkdrnevich
-  - GarrettMerz
+  - crsl4
+  - cecileane 
+  - cranmer
+  - bdezonia
+  - sstevens2
+  - kbroman  
 
 github_repos:
-  - cranmer/active_sciencing
-  - madminer-tool/madminer-tutorial
-  - cranmer/poisson-convolution-sum
-  - cranmer/neural_unfolding 
-  - cranmer/backdrop
-  - cranmer/expected-contours
-  - diana-hep/carl
+  - imagej/imagej
+  - imagej/imagej2
+  - crsl4/PhyloNetworks.jl
+  - scikit-hep/pyhf
+  - kbroman/qtl
