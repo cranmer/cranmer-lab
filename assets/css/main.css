@@ -427,7 +427,7 @@ footer.sticky-bottom {
 }
 .header-bar h1 {
   color: var(--global-theme-color);
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .tag-list {
@@ -484,6 +484,13 @@ footer.sticky-bottom {
   display: unset;
 }
 
+.pagination {
+  display: block;
+  text-align: center;
+}
+.pagination .page-item {
+  display: inline-block;
+}
 .pagination .page-item .page-link {
   color: var(--global-text-color);
 }

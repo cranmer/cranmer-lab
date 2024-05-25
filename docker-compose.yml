@@ -3,7 +3,7 @@ version: "3"
 services:
   jekyll:
     image: amirpourmand/al-folio
-    container_name: al-folio-website
+    container_name: cranmer-lab
     platform: linux/amd64/v8
     command: bash -c "
       rm -f Gemfile.lock 
