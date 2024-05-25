@@ -399,7 +399,7 @@ footer.sticky-bottom {
 
   h1 {
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
@@ -468,7 +468,12 @@ footer.sticky-bottom {
 }
 
 .pagination {
+  display: block;
+  text-align: center;
+
   .page-item {
+    display: inline-block;
+
     .page-link {
       color: var(--global-text-color);
 
