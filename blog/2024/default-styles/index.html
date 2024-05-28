@@ -11,9 +11,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>displaying beautiful tables with Bootstrap Tables | Cranmer Lab</title>
+    <title>a post with default UW template styles | Cranmer Lab</title>
     <meta name="author" content="Kyle S. Cranmer">
-    <meta name="description" content="an example of how to use Bootstrap Tables">
+    <meta name="description" content="an example of defaut UW template styles">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -42,7 +42,7 @@
     <!-- 
     -->
     <link rel="stylesheet" href="/cranmer-lab/assets/css/main.css"> 
-    <link rel="canonical" href="https://cranmer.github.io/cranmer-lab/blog/2023/tables/">
+    <link rel="canonical" href="https://cranmer.github.io/cranmer-lab/blog/2024/default-styles/">
 
     <!-- Dark Mode -->
     
@@ -206,13 +206,15 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">displaying beautiful tables with Bootstrap Tables</h1>
-    <p class="post-meta">March 20, 2023</p>
+    <h1 class="post-title">a post with default UW template styles</h1>
+    <p class="post-meta">May 28, 2024</p>
     <p class="post-tags">
-      <a href="/cranmer-lab/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+      <a href="/cranmer-lab/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024 </a>
         ·  
         <a href="/cranmer-lab/blog/category/sample-posts">
-          <i class="fas fa-tag fa-sm"></i> sample-posts</a>  
+          <i class="fas fa-tag fa-sm"></i> sample-posts,</a>  
+          <a href="/cranmer-lab/blog/category/formatting">
+          <i class="fas fa-tag fa-sm"></i> formatting</a>  
           
 
     </p>
@@ -221,104 +223,224 @@
   <article class="post-content">
     
     <div id="markdown-content">
-      <p>Using markdown to display tables is easy. Just use the following syntax:</p>
+      <p>This post shows show the default styles from the UW template. Based on the <a href="https://brand.wisc.edu/uwmadison_templates/" rel="external nofollow noopener" target="_blank">UW Template</a>.</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Left aligned | Center aligned | Right aligned |
-| :----------- | :------------: | ------------: |
-| Left 1       | center 1       | right 1       |
-| Left 2       | center 2       | right 2       |
-| Left 3       | center 3       | right 3       |
-</code></pre></div></div>
+<h1>Base typographic styles</h1>
 
-<p>That will generate:</p>
+<h2 class="uw-mini-bar">Headers</h2>
 
+<h1>This is an h1 header</h1>
+<h2>This is an h2 header</h2>
+<h3>This is an h3 header</h3>
+<h4>This is an h4 header</h4>
+<h5>This is an h5 header</h5>
+<h6>This is an h6 header</h6>
+
+<p class="uw-pad-t-l">
+
+              The 
+    <i>uw-no-case-transform</i>
+     CSS class can be used to remove the all-caps style from headers:
+            
+</p>
+
+<h2 class="uw-mini-bar">Paragraphs</h2>
+
+<p>
+          Typically, you would limit your line length using a grid or layout system of some sort.
+        </p>
+<p>
+
+              This paragraph shows 
+    <strong>strong</strong>
+     or 
+    <b>bolded</b>
+    , 
+    <em>emphasized</em>
+     or 
+    <i>italicized</i>
+     and 
+    <a href="1">linked text</a>
+    .
+            
+</p>
+
+<h2 class="uw-mini-bar">Lists</h2>
+
+<h3>Unordered lists:</h3>
+<ul>
+    <li>Intelligent</li>
+    <li>Spirited</li>
+    <li>Engaging</li>
+    <li>Beautiful</li>
+</ul>
+
+<h3>Ordered lists:</h3>
+<ol>
+    <li>Friendly</li>
+    <li>Midwestern</li>
+    <li>Comprehensive</li>
+    <li>Big</li>
+    <li>Challenging</li>
+    <li>Progressive</li>
+</ol>
+
+<h3>Lists with tight vertical spacing:</h3>
+<ul class="uw-list-tight">
+    <li>Intelligent</li>
+    <li>Spirited</li>
+    <li>Engaging</li>
+    <li>Beautiful</li>
+</ul>
+
+<h2 class="uw-mini-bar">Blockquote</h2>
+
+<blockquote>
+
+              “Whatever may be the limitations which trammel inquiry elsewhere, we believe that the great state University of Wisconsin should ever encourage that continual and fearless sifting and winnowing by which alone the truth can be found.”
+              
+    <cite>The Board of Regents, 1894</cite>
+</blockquote>
+
+<h2 class="uw-mini-bar">Blockquote, alternate style</h2>
+
+<blockquote class="uw-stylized-quote">
+
+              “Whatever may be the limitations which trammel inquiry elsewhere, we believe that the great state University of Wisconsin should ever encourage that continual and fearless sifting and winnowing by which alone the truth can be found.”
+              
+    <cite>The Board of Regents, 1894</cite>
+</blockquote>
+
+<h2 class="uw-mini-bar">Buttons</h2>
+
+<p>
+    <button class="uw-button">Save</button>
+    <button class="uw-button">Cancel</button>
+</p>
+<p>
+    <button class="uw-button uw-button-red">Save</button>
+    <button class="uw-button uw-button-red">Cancel</button>
+</p>
+<p>
+    <button class="uw-button uw-button-reverse">Save</button>
+    <button class="uw-button uw-button-reverse">Cancel</button>
+</p>
+<p>
+    <button class="uw-button uw-button-red-reverse">Save</button>
+    <button class="uw-button uw-button-red-reverse">Cancel</button>
+</p>
+
+<h2 class="uw-mini-bar">Tables</h2>
 <table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Left 1</td>
-      <td style="text-align: center">center 1</td>
-      <td style="text-align: right">right 1</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Left 2</td>
-      <td style="text-align: center">center 2</td>
-      <td style="text-align: right">right 2</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Left 3</td>
-      <td style="text-align: center">center 3</td>
-      <td style="text-align: right">right 3</td>
-    </tr>
-  </tbody>
+    <thead>
+        <tr>
+            <th scope="col">Employee</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">
+                <a href="http://example.org/" rel="external nofollow noopener" target="_blank">Mary Doe</a>
+            </th>
+            <td>$1</td>
+            <td>Because that’s all Steve Jobs needed for a salary.</td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <a href="http://example.org/" rel="external nofollow noopener" target="_blank">John Doe</a>
+            </th>
+            <td>$100K</td>
+            <td>For all the blogging he does.</td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <a href="http://example.org/" rel="external nofollow noopener" target="_blank">Jane Bloggs</a>
+            </th>
+            <td>$100M</td>
+            <td>Pictures are worth a thousand words, right?</td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <a href="http://example.org/" rel="external nofollow noopener" target="_blank">Fred Bloggs</a>
+            </th>
+            <td>$100B</td>
+            <td>
+                <p>Everyone wants to be friends with Fred.</p>
+                <p>Another paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, officia. Adipisci minus, dolore, sunt nemo dolores magnam dolorem placeat animi nostrum repudiandae, officiis a porro non architecto, eius quia iure.</p>
+            </td>
+        </tr>
+    </tbody>
 </table>
 
-<p></p>
+<h2 class="uw-mini-bar">Forms</h2>
 
-<p>It is also possible to use HTML to display tables. For example, the following HTML code will display a table with <a href="https://bootstrap-table.com/" rel="external nofollow noopener" target="_blank">Bootstrap Table</a>, loaded from a JSON file:</p>
+<form action="./">
+    <fieldset>
+        <legend>A fieldset</legend>
+        <div class="uw-input-row">
+            <label for="first-name">First name:</label>
+            <input type="text" id="first-name">
+        </div>
+        <div class="uw-input-row">
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name">
+        </div>
+    </fieldset>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">id=</span><span class="s">"table"</span>
-  <span class="na">data-toggle=</span><span class="s">"table"</span>
-  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div></div>
+    <fieldset>
+        <legend>Radio buttons</legend>
+        <label>
+            <input name="radio" type="radio" value="1" checked>
+             Option one
+        </label>
+        <label>
+            <input name="radio" type="radio" value="2">
+             Option two
+        </label>
+        <label>
+            <input name="radio" type="radio" value="3">
+             Option three
+        </label>
+    </fieldset>
 
-<table data-toggle="table" data-url="/cranmer-lab/assets/json/table_data.json">
-  <thead>
-    <tr>
-      <th data-field="id">ID</th>
-      <th data-field="name">Item Name</th>
-      <th data-field="price">Item Price</th>
-    </tr>
-  </thead>
-</table>
+    <fieldset>
+        <legend>Checkboxes</legend>
+        <label>
+            <input name="checkbox1" type="checkbox" value="1" checked>
+             Option one
+        </label>
+        <label>
+            <input name="checkbox2" type="checkbox" value="2">
+             Option two
+        </label>
+        <label>
+            <input name="checkbox3" type="checkbox" value="3">
+             Option three
+        </label>
+    </fieldset>
 
-<p></p>
+    <fieldset>
+        <legend>Select</legend>
+        <label for="select">Select:</label>
+        <select name="select" id="select">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+        </select>
+    </fieldset>
 
-<p>By using <a href="https://bootstrap-table.com/" rel="external nofollow noopener" target="_blank">Bootstrap Table</a> it is possible to create pretty complex tables, with pagination, search, and more. For example, the following HTML code will display a table, loaded from a JSON file, with pagination, search, checkboxes, and header/content alignment. For more information, check the <a href="https://examples.bootstrap-table.com/index.html" rel="external nofollow noopener" target="_blank">documentation</a>.</p>
+    <fieldset>
+        <legend>File upload</legend>
+        <label for="avatar">Choose a profile picture:</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+    </fieldset>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">data-click-to-select=</span><span class="s">"true"</span>
-  <span class="na">data-height=</span><span class="s">"460"</span>
-  <span class="na">data-pagination=</span><span class="s">"true"</span>
-  <span class="na">data-search=</span><span class="s">"true"</span>
-  <span class="na">data-toggle=</span><span class="s">"table"</span>
-  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-checkbox=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span> <span class="na">data-halign=</span><span class="s">"left"</span> <span class="na">data-align=</span><span class="s">"center"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span> <span class="na">data-halign=</span><span class="s">"center"</span> <span class="na">data-align=</span><span class="s">"right"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span> <span class="na">data-halign=</span><span class="s">"right"</span> <span class="na">data-align=</span><span class="s">"left"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div></div>
-
-<table data-click-to-select="true" data-height="460" data-pagination="true" data-search="true" data-toggle="table" data-url="/cranmer-lab/assets/json/table_data.json">
-  <thead>
-    <tr>
-      <th data-checkbox="true"></th>
-      <th data-field="id" data-halign="left" data-align="center" data-sortable="true">ID</th>
-      <th data-field="name" data-halign="center" data-align="right" data-sortable="true">Item Name</th>
-      <th data-field="price" data-halign="right" data-align="left" data-sortable="true">Item Price</th>
-    </tr>
-  </thead>
-</table>
+    <input type="submit" value="Submit">
+</form>
 
     </div>
   </article>
@@ -334,12 +456,6 @@
     <!-- Adds related posts to the end of an article -->
     <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
     <p class="mb-2">Here are some more articles you might like to read next:</p>
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2024/default-styles/">a post with default UW template styles</a>
-  </li>
-
   
 
   <li class="my-2">
@@ -362,6 +478,12 @@
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2023/videos/">a post with videos</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2023/tables/">displaying beautiful tables with Bootstrap Tables</a>
   </li>
 
   

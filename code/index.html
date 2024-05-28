@@ -11,9 +11,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>displaying beautiful tables with Bootstrap Tables | Cranmer Lab</title>
+    <title>code | Cranmer Lab</title>
     <meta name="author" content="Kyle S. Cranmer">
-    <meta name="description" content="an example of how to use Bootstrap Tables">
+    <meta name="description" content="Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -42,7 +42,7 @@
     <!-- 
     -->
     <link rel="stylesheet" href="/cranmer-lab/assets/css/main.css"> 
-    <link rel="canonical" href="https://cranmer.github.io/cranmer-lab/blog/2023/tables/">
+    <link rel="canonical" href="https://cranmer.github.io/cranmer-lab/code/">
 
     <!-- Dark Mode -->
     
@@ -131,8 +131,8 @@
               </li>
               
               <!-- Blog -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/cranmer-lab/blog/">blog<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cranmer-lab/blog/">blog</a>
               </li>
 
 
@@ -146,8 +146,8 @@
                 <li class="nav-item ">
                   <a class="nav-link" href="/cranmer-lab/projects/">projects</a>
                 </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="/cranmer-lab/code/">code</a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/cranmer-lab/code/">code<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="/cranmer-lab/cv/">cv</a>
@@ -201,228 +201,249 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- _layouts/post.html -->
+        <!-- page.html -->
+        <div class="post">
 
-<div class="post">
+          <header class="post-header">
+            <h1 class="post-title">code</h1>
+            <p class="post-description">Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.</p>
+          </header>
 
-  <header class="post-header">
-    <h1 class="post-title">displaying beautiful tables with Bootstrap Tables</h1>
-    <p class="post-meta">March 20, 2023</p>
-    <p class="post-tags">
-      <a href="/cranmer-lab/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
-        ·  
-        <a href="/cranmer-lab/blog/category/sample-posts">
-          <i class="fas fa-tag fa-sm"></i> sample-posts</a>  
-          
+          <article>
+            <h2 id="github-users">GitHub users</h2>
 
-    </p>
-  </header>
-
-  <article class="post-content">
-    
-    <div id="markdown-content">
-      <p>Using markdown to display tables is easy. Just use the following syntax:</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Left aligned | Center aligned | Right aligned |
-| :----------- | :------------: | ------------: |
-| Left 1       | center 1       | right 1       |
-| Left 2       | center 2       | right 2       |
-| Left 3       | center 3       | right 3       |
-</code></pre></div></div>
-
-<p>That will generate:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Left 1</td>
-      <td style="text-align: center">center 1</td>
-      <td style="text-align: right">right 1</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Left 2</td>
-      <td style="text-align: center">center 2</td>
-      <td style="text-align: right">right 2</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Left 3</td>
-      <td style="text-align: center">center 3</td>
-      <td style="text-align: right">right 3</td>
-    </tr>
-  </tbody>
-</table>
-
-<p></p>
-
-<p>It is also possible to use HTML to display tables. For example, the following HTML code will display a table with <a href="https://bootstrap-table.com/" rel="external nofollow noopener" target="_blank">Bootstrap Table</a>, loaded from a JSON file:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">id=</span><span class="s">"table"</span>
-  <span class="na">data-toggle=</span><span class="s">"table"</span>
-  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div></div>
-
-<table data-toggle="table" data-url="/cranmer-lab/assets/json/table_data.json">
-  <thead>
-    <tr>
-      <th data-field="id">ID</th>
-      <th data-field="name">Item Name</th>
-      <th data-field="price">Item Price</th>
-    </tr>
-  </thead>
-</table>
-
-<p></p>
-
-<p>By using <a href="https://bootstrap-table.com/" rel="external nofollow noopener" target="_blank">Bootstrap Table</a> it is possible to create pretty complex tables, with pagination, search, and more. For example, the following HTML code will display a table, loaded from a JSON file, with pagination, search, checkboxes, and header/content alignment. For more information, check the <a href="https://examples.bootstrap-table.com/index.html" rel="external nofollow noopener" target="_blank">documentation</a>.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">data-click-to-select=</span><span class="s">"true"</span>
-  <span class="na">data-height=</span><span class="s">"460"</span>
-  <span class="na">data-pagination=</span><span class="s">"true"</span>
-  <span class="na">data-search=</span><span class="s">"true"</span>
-  <span class="na">data-toggle=</span><span class="s">"table"</span>
-  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-checkbox=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span> <span class="na">data-halign=</span><span class="s">"left"</span> <span class="na">data-align=</span><span class="s">"center"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span> <span class="na">data-halign=</span><span class="s">"center"</span> <span class="na">data-align=</span><span class="s">"right"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span> <span class="na">data-halign=</span><span class="s">"right"</span> <span class="na">data-align=</span><span class="s">"left"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div></div>
-
-<table data-click-to-select="true" data-height="460" data-pagination="true" data-search="true" data-toggle="table" data-url="/cranmer-lab/assets/json/table_data.json">
-  <thead>
-    <tr>
-      <th data-checkbox="true"></th>
-      <th data-field="id" data-halign="left" data-align="center" data-sortable="true">ID</th>
-      <th data-field="name" data-halign="center" data-align="right" data-sortable="true">Item Name</th>
-      <th data-field="price" data-halign="right" data-align="left" data-sortable="true">Item Price</th>
-    </tr>
-  </thead>
-</table>
-
-    </div>
-  </article>
-
-
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   
-    
-    <br>
-    <hr>
-    <br>
-    <ul class="list-disc pl-8"></ul>
-
-    <!-- Adds related posts to the end of an article -->
-    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
-    <p class="mb-2">Here are some more articles you might like to read next:</p>
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2024/default-styles/">a post with default UW template styles</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2023/custom-blockquotes/">a post with custom blockquotes</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2023/sidebar-table-of-contents/">a post with table of contents on a sidebar</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2023/audios/">a post with audios</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2023/videos/">a post with videos</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2023/table-of-contents/">a post with table of contents</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2022/giscus-comments/">a post with giscus comments</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2022/redirect/">a post with redirect</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2021/distill/">a distill-style blog post</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/cranmer-lab/blog/2020/github-metadata/">a post with github metadata</a>
-  </li>
-
-<div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
-  <script>
-    let giscusTheme = localStorage.getItem("theme");
-    let giscusAttributes = {
-        "src": "https://giscus.app/client.js",
-        "data-repo": "cranmer/cranmer-lab",
-        "data-repo-id": "MDEwOlJlcG9zaXRvcnk2MDAyNDM2NQ==",
-        "data-category": "Comments",
-        "data-category-id": "DIC_kwDOA5PmLc4CTBt6",
-        "data-mapping": "title",
-        "data-strict": "1",
-        "data-reactions-enabled": "1",
-        "data-emit-metadata": "0",
-        "data-input-position": "bottom",
-        "data-theme": giscusTheme,
-        "data-lang": "en",
-        "crossorigin": "anonymous",
-        "async": "",
-    };
-
-
-    let giscusScript = document.createElement("script");
-    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
-    document.getElementById("giscus_thread").appendChild(giscusScript);
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://giscus.app/?ref_noscript" rel="external nofollow noopener" target="_blank">comments powered by giscus.</a>
-</noscript>
+    <div class="repo p-2 text-center">
+  <a href="https://github.com/cranmer" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="cranmer" src="https://github-readme-stats.vercel.app/api/?username=cranmer&amp;theme=default&amp;show_icons=true">
+    <img class="repo-img-dark w-100" alt="cranmer" src="https://github-readme-stats.vercel.app/api/?username=cranmer&amp;theme=dark&amp;show_icons=true">
+  </a>
 </div>
+
+  
+    <div class="repo p-2 text-center">
+  <a href="https://github.com/matthewfeickert" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="matthewfeickert" src="https://github-readme-stats.vercel.app/api/?username=matthewfeickert&amp;theme=default&amp;show_icons=true">
+    <img class="repo-img-dark w-100" alt="matthewfeickert" src="https://github-readme-stats.vercel.app/api/?username=matthewfeickert&amp;theme=dark&amp;show_icons=true">
+  </a>
 </div>
+
+  
+    <div class="repo p-2 text-center">
+  <a href="https://github.com/alexander-held" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="alexander-held" src="https://github-readme-stats.vercel.app/api/?username=alexander-held&amp;theme=default&amp;show_icons=true">
+    <img class="repo-img-dark w-100" alt="alexander-held" src="https://github-readme-stats.vercel.app/api/?username=alexander-held&amp;theme=dark&amp;show_icons=true">
+  </a>
+</div>
+
+  
+    <div class="repo p-2 text-center">
+  <a href="https://github.com/irinaespejo" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="irinaespejo" src="https://github-readme-stats.vercel.app/api/?username=irinaespejo&amp;theme=default&amp;show_icons=true">
+    <img class="repo-img-dark w-100" alt="irinaespejo" src="https://github-readme-stats.vercel.app/api/?username=irinaespejo&amp;theme=dark&amp;show_icons=true">
+  </a>
+</div>
+
+  
+    <div class="repo p-2 text-center">
+  <a href="https://github.com/mdkdrnevich" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="mdkdrnevich" src="https://github-readme-stats.vercel.app/api/?username=mdkdrnevich&amp;theme=default&amp;show_icons=true">
+    <img class="repo-img-dark w-100" alt="mdkdrnevich" src="https://github-readme-stats.vercel.app/api/?username=mdkdrnevich&amp;theme=dark&amp;show_icons=true">
+  </a>
+</div>
+
+  
+    <div class="repo p-2 text-center">
+  <a href="https://github.com/GarrettMerz" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="GarrettMerz" src="https://github-readme-stats.vercel.app/api/?username=GarrettMerz&amp;theme=default&amp;show_icons=true">
+    <img class="repo-img-dark w-100" alt="GarrettMerz" src="https://github-readme-stats.vercel.app/api/?username=GarrettMerz&amp;theme=dark&amp;show_icons=true">
+  </a>
+</div>
+
+  
+</div>
+
+<hr>
+
+<h4>cranmer</h4>
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repo p-2 text-center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-200" alt="cranmer" src="https://github-profile-trophy.vercel.app/?username=cranmer&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+    <img class="repo-img-dark w-200" alt="cranmer" src="https://github-profile-trophy.vercel.app/?username=cranmer&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+  </a>
+</div>
+
+  </div>
+
+<hr>
+
+<h4>matthewfeickert</h4>
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repo p-2 text-center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-200" alt="matthewfeickert" src="https://github-profile-trophy.vercel.app/?username=matthewfeickert&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+    <img class="repo-img-dark w-200" alt="matthewfeickert" src="https://github-profile-trophy.vercel.app/?username=matthewfeickert&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+  </a>
+</div>
+
+  </div>
+
+<hr>
+
+<h4>alexander-held</h4>
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repo p-2 text-center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-200" alt="alexander-held" src="https://github-profile-trophy.vercel.app/?username=alexander-held&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+    <img class="repo-img-dark w-200" alt="alexander-held" src="https://github-profile-trophy.vercel.app/?username=alexander-held&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+  </a>
+</div>
+
+  </div>
+
+<hr>
+
+<h4>irinaespejo</h4>
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repo p-2 text-center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-200" alt="irinaespejo" src="https://github-profile-trophy.vercel.app/?username=irinaespejo&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+    <img class="repo-img-dark w-200" alt="irinaespejo" src="https://github-profile-trophy.vercel.app/?username=irinaespejo&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+  </a>
+</div>
+
+  </div>
+
+<hr>
+
+<h4>mdkdrnevich</h4>
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repo p-2 text-center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-200" alt="mdkdrnevich" src="https://github-profile-trophy.vercel.app/?username=mdkdrnevich&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+    <img class="repo-img-dark w-200" alt="mdkdrnevich" src="https://github-profile-trophy.vercel.app/?username=mdkdrnevich&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+  </a>
+</div>
+
+  </div>
+
+<hr>
+
+<h4>GarrettMerz</h4>
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repo p-2 text-center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-200" alt="GarrettMerz" src="https://github-profile-trophy.vercel.app/?username=GarrettMerz&amp;theme=flat&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+    <img class="repo-img-dark w-200" alt="GarrettMerz" src="https://github-profile-trophy.vercel.app/?username=GarrettMerz&amp;theme=gitdimmed&amp;locale=en&amp;margin-w=15&amp;margin-h=15&amp;no-bg=true&amp;rank=-C">
+  </a>
+</div>
+
+  </div>
+
+<hr>
+
+<h2 id="github-repositories">GitHub Repositories</h2>
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  
+    
+
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/cranmer/active_sciencing" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="cranmer/active_sciencing" src="https://github-readme-stats.vercel.app/api/pin/?username=cranmer&amp;repo=active_sciencing&amp;theme=default&amp;show_owner=false">
+    <img class="repo-img-dark w-100" alt="cranmer/active_sciencing" src="https://github-readme-stats.vercel.app/api/pin/?username=cranmer&amp;repo=active_sciencing&amp;theme=dark&amp;show_owner=false">
+  </a>
+</div>
+
+  
+    
+
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/madminer-tool/madminer-tutorial" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="madminer-tool/madminer-tutorial" src="https://github-readme-stats.vercel.app/api/pin/?username=madminer-tool&amp;repo=madminer-tutorial&amp;theme=default&amp;show_owner=true">
+    <img class="repo-img-dark w-100" alt="madminer-tool/madminer-tutorial" src="https://github-readme-stats.vercel.app/api/pin/?username=madminer-tool&amp;repo=madminer-tutorial&amp;theme=dark&amp;show_owner=true">
+  </a>
+</div>
+
+  
+    
+
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/cranmer/poisson-convolution-sum" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="cranmer/poisson-convolution-sum" src="https://github-readme-stats.vercel.app/api/pin/?username=cranmer&amp;repo=poisson-convolution-sum&amp;theme=default&amp;show_owner=false">
+    <img class="repo-img-dark w-100" alt="cranmer/poisson-convolution-sum" src="https://github-readme-stats.vercel.app/api/pin/?username=cranmer&amp;repo=poisson-convolution-sum&amp;theme=dark&amp;show_owner=false">
+  </a>
+</div>
+
+  
+    
+
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/cranmer/neural_unfolding" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="cranmer/neural_unfolding" src="https://github-readme-stats.vercel.app/api/pin/?username=cranmer&amp;repo=neural_unfolding&amp;theme=default&amp;show_owner=false">
+    <img class="repo-img-dark w-100" alt="cranmer/neural_unfolding" src="https://github-readme-stats.vercel.app/api/pin/?username=cranmer&amp;repo=neural_unfolding&amp;theme=dark&amp;show_owner=false">
+  </a>
+</div>
+
+  
+    
+
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/cranmer/backdrop" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="cranmer/backdrop" src="https://github-readme-stats.vercel.app/api/pin/?username=cranmer&amp;repo=backdrop&amp;theme=default&amp;show_owner=false">
+    <img class="repo-img-dark w-100" alt="cranmer/backdrop" src="https://github-readme-stats.vercel.app/api/pin/?username=cranmer&amp;repo=backdrop&amp;theme=dark&amp;show_owner=false">
+  </a>
+</div>
+
+  
+    
+
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/cranmer/expected-contours" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="cranmer/expected-contours" src="https://github-readme-stats.vercel.app/api/pin/?username=cranmer&amp;repo=expected-contours&amp;theme=default&amp;show_owner=false">
+    <img class="repo-img-dark w-100" alt="cranmer/expected-contours" src="https://github-readme-stats.vercel.app/api/pin/?username=cranmer&amp;repo=expected-contours&amp;theme=dark&amp;show_owner=false">
+  </a>
+</div>
+
+  
+    
+
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/diana-hep/carl" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="diana-hep/carl" src="https://github-readme-stats.vercel.app/api/pin/?username=diana-hep&amp;repo=carl&amp;theme=default&amp;show_owner=true">
+    <img class="repo-img-dark w-100" alt="diana-hep/carl" src="https://github-readme-stats.vercel.app/api/pin/?username=diana-hep&amp;repo=carl&amp;theme=dark&amp;show_owner=true">
+  </a>
+</div>
+
+  
+</div>
+
+
+          </article>
+
+        </div>
       
     </div>
 
