@@ -77,6 +77,19 @@ This post shows show the default styles from the UW template. Based on the [UW T
     <li>Beautiful</li>
 </ul>
 
+## Test h2 and blockquote style with markdown syntax
+{: .uw-mini-bar}
+
+> "All models are wrong but some are useful"
+<cite>George Box</cite>
+
+>   “Whatever may be the limitations which trammel inquiry elsewhere, we believe that the great state University of Wisconsin should ever encourage that continual and fearless sifting and winnowing by which alone the truth can be found.”
+<cite>The Board of Regents, 1894</cite>
+{: .uw-stylized-quote}
+
+
+
+
 <h2 class="uw-mini-bar">Blockquote</h2>
 
 <blockquote>
